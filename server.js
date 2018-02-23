@@ -5,7 +5,6 @@ const path = require('path');
 const fs = require('fs');
 //const exphbs = require('express-handlebars');
 
-
 app.set('view engine','ejs');
 // app.set('view engine', 'handlebars');
 // app.engine('handlebars', exphbs({defaultLayout: 'main'}));
