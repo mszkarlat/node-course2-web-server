@@ -38,7 +38,7 @@ app.use(function(req, res, next){
 app.get('/', (req, res) => {
     res.render('home',{
         pageTitle: 'Home',
-        welcomeMessage: 'Welcome to my website'
+        welcomeMessage: 'Welcome to my website. This is a new change.'
     });
 }); 
 
@@ -54,6 +54,11 @@ app.get('/bad', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects',{
+        pageTitle: 'Projects'
+    });
+});
 
 app.listen(port, () => {
     console.log('App listening on port 3000!');
